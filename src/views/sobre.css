@@ -1,10 +1,10 @@
-.contenedorAbout{
+.contenedorSobre{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 20px;
     padding: 10%;
 }
-.imageAbout img{
+.imagenSobre img{
     width: 100%;
 }
 .etiquetas {
@@ -13,7 +13,15 @@
     grid-gap: 10px;
     margin-top: 35px;
 }
-.etiquetas .azules{
+.etiquetas div:nth-of-type(odd){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+}
+.etiquetas div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,18 +29,10 @@
     color: var(--Azulsecundario);
     text-decoration: none;
 }
-.etiquetas .blancas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    color: white;
-    text-decoration: none;
-}
-.informacionAbout{
+.informacionSobre{
     color: white;
 }
-.informacionAbout button{
+.informacionSobre button{
     padding: 10px;
     color: var(--buttonColor);
     border-radius: 20px;

@@ -31,45 +31,45 @@ class About extends Component {
         return(
             <>
                 <Navegacion></Navegacion>
-                <section className="aboutMe">
-                    <div className="contenedorAbout">
-                        <div className="imageAbout">
-                            <img src={Imagen} alt="imageAbout"/>
+                <section className="sobreMi">
+                    <div className="contenedorSobre">
+                        <div className="imagenSobre">
+                            <img src={Imagen} alt="imagenSobre"/>
                         </div>
-                        <div className="informacionAbout">
+                        <div className="informacionSobre">
                             <h2>Sobre mí</h2>
                             <p>Hola, soy Edgar, programador Full-stack, vivo en Coacalco Estado de México, tengo amplia experiencia
-                                en Lenguajes de programación enfocados en Web, tengo 2 años de experiencia (y contando :D )
+                                en lenguajes de programación enfocados en web, cuento con 2 años de experiencia.
                             </p>
                             <div className="etiquetas">
-                                <div className="blancas">
+                                <div>
                                     <FontAwesomeIcon icon={faJs} title="JavaScript" />
                                 </div>
-                                <div className="azules">
+                                <div>
                                     <FontAwesomeIcon icon={faReact} title="ReactJs" />
                                 </div>
-                                <div className="blancas">
+                                <div>
                                     <FontAwesomeIcon icon={faAngular} title="Angular" />
                                 </div>
-                                <div className="azules">
+                                <div>
                                     <FontAwesomeIcon icon={faHtml5} title="HTML5" />
                                 </div>
-                                <div className="blancas">
+                                <div>
                                     <FontAwesomeIcon icon={faCss3} title="CSS" />
                                 </div>
-                                <div className="azules">
+                                <div>
                                     <FontAwesomeIcon icon={faSass} title="SASS (CSS with superpowers)" />
                                 </div>
-                                <div className="blancas">
+                                <div>
                                     <FontAwesomeIcon icon={faPython} title="Python3"/>
                                 </div>
-                                <div className="azules">
+                                <div>
                                     <FontAwesomeIcon icon={faPhp} title="PHP" />
                                 </div>
-                                <div className="blancas">
+                                <div>
                                     <FontAwesomeIcon icon={faDatabase} title="Databases" />
                                 </div>
-                                <div className="azules">
+                                <div>
                                     <FontAwesomeIcon icon={faServer} title="Servidores" />
                                 </div>
                             </div>
@@ -92,16 +92,17 @@ class About extends Component {
                             <FontAwesomeIcon icon={faCode}/>
                             <h3>Desarrollo Back-end</h3>
                             <p>
-                                Tengo la capacidad y la experiencia para desarrollar sitios web basados en diseño
-                                UX/UI con tecnologias de front-end como son HTML5,CSS,JavaScript y/o algunos de sus frameworks
+                                Dentro de mis habilidades tecnicas se encuentran diferentes lenguajes de programación, como PHP, Java y Python3)
+                                utiles para crear APIs, servicios web, así como conexiones con bases de datos
                             </p>
                         </div>
                         <div className="tarjeta">
                             <FontAwesomeIcon icon={faObjectUngroup}/>
                             <h3>Configuración de APIs</h3>
                             <p>
-                                Tengo la capacidad y la experiencia para desarrollar sitios web basados en diseño
-                                UX/UI con tecnologias de front-end como son HTML5,CSS,JavaScript y/o algunos de sus frameworks
+                                La creacion de procesos internos en un servidor es muy importante a la hora de crear un API,
+                                para ello he utilizado tecnologias como son Nginx, Flask, Gunicorn y servicios desarrollados 
+                                para Ubuntu
                             </p>
                         </div>
                     </div>

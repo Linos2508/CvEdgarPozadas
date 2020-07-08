@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 import "./navigation.css";
 
 class Navegacion extends Component {
-    state = {
-        //boot: getBoot()[getCookie("Orolang")],
-    };
+    constructor() {
+        super();
+        this.state = {
+            //boot: getBoot()[getCookie("Orolang")],
+        }
+    }
     componentDidMount() {
         console.log(window.location.pathname);
         switch (window.location.pathname){
@@ -34,7 +37,7 @@ class Navegacion extends Component {
                                 <Link to="/sobre">Sobre mí</Link>
                             </li>
                             <li>
-                                <Link to="/">Skills</Link>
+                                <Link to="/skills">Skills</Link>
                             </li>
                             <li>
                                 <Link to="/">Experiencia</Link>

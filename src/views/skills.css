@@ -1,0 +1,49 @@
+.contenedorHabilidades{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    padding: 10%;
+}
+.habilidadesTecnicas h3{
+    color: white;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+.habilidad{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    color: white;
+}
+.habilidad .lenguaje{
+    padding: 5% 0;
+}
+.habilidad .nivel{
+    text-align: end;
+    padding: 5% 5%;
+}
+.habilidad .barras{
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 5px;
+}
+.barraActiva{
+    background-color: var(--Azulsecundario);
+    height: 10px;
+    border-radius: 10px;
+    width: 95%;
+    text-align: center;
+    font-size: 10px;
+}
+.barraActiva svg{
+    margin-bottom: 3px;
+}
+.barraInactiva{
+    background-color: var(--buttonColor);
+    height: 10px;
+    border-radius: 10px;
+    width: 95%;
+}
