@@ -12,11 +12,12 @@ import
     faAngular,
     faPython
  } from "@fortawesome/free-brands-svg-icons"
-import {faDatabase, faServer, faDownload, faLaptop, faCode} from "@fortawesome/free-solid-svg-icons"
+import {faDatabase, faServer, faDownload, faLaptop, faCode,faUsers, faBrain, faMagic, faBookReader, faHandshake } from "@fortawesome/free-solid-svg-icons";
 import {faObjectUngroup} from "@fortawesome/free-regular-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Navegacion from "../components/navigation.jsx";
 import PDF from "../assets/CV Edgar Pozadas Muñoz.pdf"
+import Typewriter from 'typewriter-effect';
 
 class About extends Component {
     state = {
@@ -85,25 +86,58 @@ class About extends Component {
                             <h3>Desarrollo Front-end</h3>
                             <p>
                                 Tengo la capacidad y la experiencia para desarrollar sitios web basados en diseño
-                                UX/UI con tecnologias de front-end como son HTML5,CSS,JavaScript y/o algunos de sus frameworks
+                                UX/UI con tecnologías de front-end como son HTML5, CSS, JavaScript y/o algunos de sus frameworks
                             </p>
                         </div>
                         <div className="tarjeta">
                             <FontAwesomeIcon icon={faCode}/>
                             <h3>Desarrollo Back-end</h3>
                             <p>
-                                Dentro de mis habilidades tecnicas se encuentran diferentes lenguajes de programación, como PHP, Java y Python3)
-                                utiles para crear APIs, servicios web, así como conexiones con bases de datos
+                                Dentro de mis habilidades técnicas se encuentran diferentes lenguajes de programación, como PHP, Java y Python3
+                                útiles para crear APIs, servicios web, así como conexiones con bases de datos
                             </p>
                         </div>
                         <div className="tarjeta">
                             <FontAwesomeIcon icon={faObjectUngroup}/>
                             <h3>Configuración de APIs</h3>
                             <p>
-                                La creacion de procesos internos en un servidor es muy importante a la hora de crear un API,
-                                para ello he utilizado tecnologias como son Nginx, Flask, Gunicorn y servicios desarrollados 
+                                La creación de procesos internos en un servidor es muy importante a la hora de crear un API,
+                                para ello he utilizado tecnologías como son Nginx, Flask, Gunicorn y servicios desarrollados 
                                 para Ubuntu
                             </p>
+                        </div>
+                    </div>
+                </section>
+                <section className="habilidades">
+                    <div className="contenedorHabilidadesProfesionales">
+                        <h2><Typewriter
+                                options={{
+                                    strings: 'Habilidades Profesionales',
+                                    autoStart: true,
+                                    loop: false,
+                                }}
+                                /></h2>
+                        <div className="habilidadesProfesionales">
+                            <div className="tarjeta">
+                                <FontAwesomeIcon icon={faUsers}/>
+                                <h5>Trabajo en equipo</h5>
+                            </div>
+                            <div className="tarjeta">
+                                <FontAwesomeIcon icon={faBookReader}/>
+                                <h5>Proactivo</h5>
+                            </div>
+                            <div className="tarjeta">
+                                <FontAwesomeIcon icon={faMagic}/>
+                                <h5>Creatividad</h5>
+                            </div>
+                            <div className="tarjeta">
+                                <FontAwesomeIcon icon={faBrain}/>
+                                <h5>Pensamiento Lógico</h5>
+                            </div>
+                            <div className="tarjeta">
+                                <FontAwesomeIcon icon={faHandshake}/>
+                                <h5>Tolerancia</h5>
+                            </div>
                         </div>
                     </div>
                 </section>

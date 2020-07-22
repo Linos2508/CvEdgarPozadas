@@ -5,6 +5,7 @@ import { faEnvelope, faPhone, faMapMarkerAlt } from "@fortawesome/free-solid-svg
 import { faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Navegacion from "../components/navigation.jsx";
+import Video from "../assets/video.mp4";
 
 class Home extends Component {
     state = {
@@ -17,6 +18,9 @@ class Home extends Component {
             <>
                 <Navegacion></Navegacion>
                 <section className="presentacion">
+                    <video className="backgroundVideo" autoPlay={true} muted={true} loop>
+                        <source src={Video} type="video/mp4"/>
+                    </video>
                     <div className="contenedorPrincipal">
                         <div className="informacion">
                             <button>Hola yo soy</button>

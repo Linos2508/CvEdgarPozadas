@@ -18,6 +18,9 @@ class Navegacion extends Component {
             case "/sobre":
                 document.getElementById("sobre").classList.add("active");
                 break;
+            case "/skills":
+                document.getElementById("skills").classList.add("active");
+                break;
             default:
                 document.getElementById("home").classList.add("active");
                 break;
@@ -35,9 +38,6 @@ class Navegacion extends Component {
                             </li>
                             <li id="sobre">
                                 <Link to="/sobre">Sobre mí</Link>
-                            </li>
-                            <li>
-                                <Link to="/skills">Skills</Link>
                             </li>
                             <li>
                                 <Link to="/">Experiencia</Link>
