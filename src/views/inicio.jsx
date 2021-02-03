@@ -16,9 +16,9 @@ import {
     faPython, 
     faUbuntu,
     faLinux,
-    faBootstrap} from "@fortawesome/free-brands-svg-icons"
+    faBootstrap} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import PDF from "../assets/cv_edgar.pdf"
+import PDF from "../assets/cv_edgar.pdf";
 
 class Home extends Component {
     state = {};
@@ -27,9 +27,6 @@ class Home extends Component {
         return(
             <>
                 <section className="presentacion">
-                    {/* <video className="backgroundVideo" autoPlay={true} muted={true} loop>
-                        <source src={Video} type="video/mp4"/>
-                    </video> */}
                     <div className="contenedorPrincipal">
                         <div className="informacion">
                             <div className="imagen">
@@ -52,24 +49,48 @@ class Home extends Component {
                                 <h2> Objetivo Profesional</h2>
                                 <p>
                                     Encontrar una empresa de TI donde pueda seguir desarrollando mis habilidades y aptitudes.
-                                    Adicto al código, Amante de Python
+                                    Adicto al código, Amante de Python.
                                 </p>
                             </div>
                             <div className="skillsTecnicos">
                                 <h2>Skills Técnicos</h2>
                                 <div className="lenguajes">
-                                    <FontAwesomeIcon icon={faPython} title="Python3"/>
-                                    <FontAwesomeIcon icon={faPhp} title="PHP" />
-                                    <FontAwesomeIcon icon={faDatabase} title="Databases" />
-                                    <FontAwesomeIcon icon={faUbuntu} title="Ubuntu" />
-                                    <FontAwesomeIcon icon={faLinux} title="Linux" />
-                                    <FontAwesomeIcon icon={faJs} title="JavaScript" />
-                                    <FontAwesomeIcon icon={faReact} title="ReactJs" />
-                                    <FontAwesomeIcon icon={faAngular} title="Angular" />
-                                    <FontAwesomeIcon icon={faHtml5} title="HTML5" />
-                                    <FontAwesomeIcon icon={faCss3} title="CSS" />
-                                    <FontAwesomeIcon icon={faBootstrap} title="Bootstrap" />
-                                    <FontAwesomeIcon icon={faSass} title="SASS (CSS with superpowers)" />
+                                    <article>
+                                        <FontAwesomeIcon icon={faPython} title="Python3"/>
+                                    </article>
+                                    <article>
+                                        <FontAwesomeIcon icon={faPhp} title="PHP" />
+                                    </article>
+                                    <article>
+                                        <FontAwesomeIcon icon={faDatabase} title="Databases" />
+                                    </article>
+                                    <article>
+                                        <FontAwesomeIcon icon={faUbuntu} title="Ubuntu" />
+                                    </article>
+                                    <article>
+                                        <FontAwesomeIcon icon={faLinux} title="Linux" />
+                                    </article>
+                                    <article>
+                                        <FontAwesomeIcon icon={faJs} title="JavaScript" />
+                                    </article>
+                                    <article>
+                                        <FontAwesomeIcon icon={faReact} title="ReactJs" />
+                                    </article>
+                                    <article>
+                                        <FontAwesomeIcon icon={faAngular} title="Angular" />
+                                    </article>
+                                    <article>
+                                        <FontAwesomeIcon icon={faHtml5} title="HTML5" />
+                                    </article>
+                                    <article>
+                                        <FontAwesomeIcon icon={faCss3} title="CSS" />
+                                    </article>
+                                    <article>
+                                        <FontAwesomeIcon icon={faBootstrap} title="Bootstrap" />
+                                    </article>
+                                    <article>
+                                        <FontAwesomeIcon icon={faSass} title="SASS (CSS with superpowers)" />
+                                    </article>
                                 </div>
                             </div>
                             <div className="experienciaLaboral">
