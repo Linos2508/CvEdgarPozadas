@@ -1,3 +1,13 @@
+## GIT rules
+
+- **DOCS**: Add files or language in boot.
+- **FEAT:** Add new JSX files or new funcions.
+- **REFACTOR:** Rewritte code in a better way.
+- **FIX:** Fix functions.
+- **STYLE:** Add or refactor styles.
+- **TEST:**  Create testing code.
+- **CHORE:** To add things to readme and gitignore.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

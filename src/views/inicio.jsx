@@ -27,6 +27,9 @@ class Home extends Component {
         return(
             <>
                 <section className="presentacion">
+                    {/* <video className="backgroundVideo" autoPlay={true} muted={true} loop>
+                        <source src={Video} type="video/mp4"/>
+                    </video> */}
                     <div className="contenedorPrincipal">
                         <div className="informacion">
                             <div className="imagen">
