@@ -1,4 +1,4 @@
-name: Check Format
+name: Check_Format
 on: [push, pull_request]]
 jobs:
   prettier:
