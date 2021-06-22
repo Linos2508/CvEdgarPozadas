@@ -24,7 +24,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:e2e": "wdio run ./wdio.conf.js",
+    "test:e2e": "wdio run ./wdio.conf.js --disable-dev-shm-usage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
