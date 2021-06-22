@@ -1,21 +1,29 @@
 name: CI
 on: [push, pull_request]
 jobs:
-  build:
+  test:
+    name: "Node.js v${{ matrix.node }}"
+    needs: check-skip
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node:
+          - 10
+          - 12
+          - 14
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install
-        uses: ianwalter/puppeteer-container@afefc4bee7341a77baa94503da684e2895ea5d30
+      - uses: actions/setup-node@v1
         with:
-          args: npm install
-      - name: Test
-        uses: ianwalter/puppeteer-container@afefc4bee7341a77baa94503da684e2895ea5d30
+          node-version: "${{ matrix.node }}"
+      - uses: actions/checkout@v2
+      - name: "Cache node_modules"
+        uses: actions/cache@v2
         with:
-          args: npm run test:e2e
-      - uses: actions/upload-artifact@v1
-        if: failure()
-        with:
-          name: logs
-          path: logs
+          path: ~/.npm
+          key: ${{ runner.os }}-node-v${{ matrix.node }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-v${{ matrix.node }}-
+      - name: Install Dependencies
+        run: npm install
+      - name: Run All Node.js Tests
+        run: npm run test:e2e
