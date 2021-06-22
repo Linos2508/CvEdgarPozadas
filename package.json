@@ -11,6 +11,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "@wdio/cli": "^7.7.4",
     "font-awesome": "^4.7.0",
     "rc-progress": "^3.0.0",
     "react": "^16.13.1",
@@ -23,6 +24,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:e2e": "npx wdio run ./wdio.conf.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -39,5 +41,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^7.7.4",
+    "@wdio/mocha-framework": "^7.7.4",
+    "@wdio/spec-reporter": "^7.7.3",
+    "chromedriver": "^91.0.1",
+    "wdio-chromedriver-service": "^7.1.0"
   }
 }
