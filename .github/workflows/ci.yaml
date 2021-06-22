@@ -10,14 +10,10 @@ jobs:
         uses: ianwalter/puppeteer-container@afefc4bee7341a77baa94503da684e2895ea5d30
         with:
           args: npm install
-      - name: Start
-        uses: ianwalter/puppeteer-container@afefc4bee7341a77baa94503da684e2895ea5d30
-        with:
-          args: apt-get install google-chrome-stable
       - name: Test
         uses: ianwalter/puppeteer-container@afefc4bee7341a77baa94503da684e2895ea5d30
         with:
-          args: npm run test:e2e
+          args: npm run test:e2e --disable-dev-shm-usage
       - uses: actions/upload-artifact@v1
         if: failure()
         with:
