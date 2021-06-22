@@ -1,10 +1,10 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-import './App.css';
+import "./App.css";
 import Inicio from "./views/inicio.jsx";
 import getBoot from "./common/boot";
 
-export default function App(){
+export default function App() {
   if (localStorage.getItem("lang") === null) {
     localStorage.setItem("lang", "en");
     window.location.reload();
@@ -19,7 +19,7 @@ export default function App(){
       <Route
         path="/"
         exact
-        render={props => (
+        render={(props) => (
           <Inicio
             activeLang={localStorage.getItem("lang")}
             boot={boot}
