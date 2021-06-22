@@ -25,6 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:e2e": "npx wdio run ./wdio.conf.js",
+    "format": "prettier --write src/**/*.jsx src/**/*.css",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -47,6 +48,7 @@
     "@wdio/mocha-framework": "^7.7.4",
     "@wdio/spec-reporter": "^7.7.3",
     "chromedriver": "^91.0.1",
+    "prettier": "2.3.1",
     "wdio-chromedriver-service": "^7.1.0"
   }
 }
