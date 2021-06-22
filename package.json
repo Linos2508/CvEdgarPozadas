@@ -24,7 +24,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:e2e": "npx wdio run ./wdio.conf.js",
+    "test:e2e": "wdio run ./wdio.conf.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
