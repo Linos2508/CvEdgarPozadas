@@ -1,18 +1,18 @@
 name: Check_Format
-on: [push, pull_request]]
+on: [push, pull_request]
 jobs:
   prettier:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-      with:
-        ref: ${{ github.head_ref }}
-    - name: Prettify code
-      uses: creyD/prettier_action@v3.3
-      with:
-        # This part is also where you can pass other options, for example:
-        dry: true
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+      - name: Prettify code
+        uses: creyD/prettier_action@v3.3
+        with:
+          # This part is also where you can pass other options, for example:
+          dry: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
