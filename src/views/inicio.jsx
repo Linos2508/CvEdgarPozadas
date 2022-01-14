@@ -24,10 +24,20 @@ import {
   faUbuntu,
   faLinux,
   faBootstrap,
+  faAws,
+  faNodeJs,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Home(props) {
+  const renderExperience = () => {
+    let experiences = [];
+    experiences = props.boot.experience.map((item, index) => {
+      return <li key={"experience" + index}>{item}</li>;
+    });
+    return experiences;
+  };
+
   return (
     <>
       <section className="presentacion">
@@ -142,15 +152,20 @@ export default function Home(props) {
                     title="SASS (CSS with superpowers)"
                   />
                 </article>
+                <article>
+                  <FontAwesomeIcon icon={faAws} title="Amazon Web Services" />
+                </article>
+                <article>
+                  <FontAwesomeIcon icon={faNodeJs} title="NodeJs" />
+                </article>
+                <article>
+                  <FontAwesomeIcon icon={faGithub} title="CI/CD GitHub" />
+                </article>
               </div>
             </div>
             <div className="experienciaLaboral">
               <h2>{props.boot.experienceTitle}</h2>
-              <ul>
-                <li>{props.boot.experience1}</li>
-                <li>{props.boot.experience2}</li>
-                <li>{props.boot.experience3}</li>
-              </ul>
+              <ul>{renderExperience()}</ul>
             </div>
           </div>
         </div>
