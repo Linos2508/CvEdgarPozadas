@@ -1,14 +1,14 @@
-name: CI
-on: [push, pull_request]
-jobs:
-  build:
-    runs-on: windows-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: "13.11.0"
-      - name: Install
-        run: npm ci
-      - run: npm start & npx wait-on http://localhost:3000 & npm run test:e2e
+# name: CI
+# on: [push, pull_request]
+# jobs:
+#   build:
+#     runs-on: windows-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - name: Use Node.js ${{ matrix.node-version }}
+#         uses: actions/setup-node@v1
+#         with:
+#           node-version: "13.11.0"
+#       - name: Install
+#         run: npm ci
+#       - run: npm start & npx wait-on http://localhost:3000 & npm run test:e2e
